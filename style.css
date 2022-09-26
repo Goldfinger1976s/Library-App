@@ -28,7 +28,6 @@
   margin: 0;
 }
 
-
 body {
   background-color: var(--grey);
   color: var(--black);
@@ -87,18 +86,22 @@ input {
   z-index: 1;
 }
 
+.addbook-btn:hover {
+  transform: scale(1.15);
+}
+
 .addbook-btn.active {
-  transform: rotate(45deg)
+  transform: rotate(45deg) scale(1.15);
 }
 
 .btn {
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--border-radius);
   transition: filter 0.15s ease-in-out;
-  
 }
 .btn:hover {
   filter: brightness(90%);
+  box-shadow: var(--shadow);
 }
 
 .btn-add {
@@ -113,7 +116,6 @@ input {
 .btn-light-red {
   background-color: var(--light-red);
 }
-
 
 /* Main */
 
@@ -218,7 +220,7 @@ input {
 }
 
 .overlay.active {
-  display:block;
+  display: block;
 }
 
 /* Media */
